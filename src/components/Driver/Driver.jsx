@@ -5,7 +5,7 @@ import SearchDriver from "../SearchDriver/SearchDriver.jsx"
 import DriverForm from "../DriverForm/DriverForm.jsx"
 
 export default function Driver(){
-	const [driver, setDriver]= useState({
+	const DEFAULT_DRIVER={
 		name:"",
 		email:"",
 		phone:"",
@@ -13,31 +13,14 @@ export default function Driver(){
 		vehicle_type:"",
 		license_number:"",
 		vehicle_plate_number:""
-	})
+	}
+	const [driver, setDriver]= useState(DEFAULT_DRIVER)
 	const[formActive,setFormActive]= useState(false)
 	const [name,setName] = useState("")
 	const [drivers, setDrivers] = useState(Drivers.drivers);
-
-	// const driverData ={
-	// 	name,
-	// 	email,
-	// 	phone,
-	// 	location,
-	// 	vehicle,
-	// 	licenseNumber,
-	// 	vehicleNumber
-	// }
 	const handleFormActive=(val)=> _=>{
 		setFormActive(val)
-		setDriver({
-		name:"",
-		email:"",
-		phone:"",
-		location:"",
-		vehicle_type:"",
-		license_number:"",
-		vehicle_plate_number:""
-	})
+		setDriver(DEFAULT_DRIVER)
 
 	}
 	const handleDriverChange=(data)=>(e)=>setDriver({...driver,[data]:e.target.value});
