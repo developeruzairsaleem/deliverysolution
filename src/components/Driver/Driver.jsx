@@ -2,18 +2,32 @@ import "./Driver.css"
 import Drivers from "../../drivers.json"
 import {useState} from "react";
 import SearchDriver from "../SearchDriver/SearchDriver.jsx"
+import DriverForm from "../DriverForm/DriverForm.jsx"
 
 export default function Driver(){
 	const drivers = Drivers.drivers;
+
+	// const driverData ={
+	// 	name,
+	// 	email,
+	// 	phone,
+	// 	location,
+	// 	vehicle,
+	// 	licenseNumber,
+	// 	vehicleNumber
+	// }
+
 	
 	const [name,setName] = useState("")
 	const handleNameChange=(e)=> setName(e.target.value)
 
 	return (
 		<div className="driver">
+
 			<h1 className="driver__heading">
 				Drivers Data
 			</h1>
+			<DriverForm/>
 
 
 			<SearchDriver name={name} handleNameChange={handleNameChange} />

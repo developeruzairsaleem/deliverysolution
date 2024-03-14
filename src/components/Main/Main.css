@@ -2,5 +2,6 @@
 	width: 80%;
 /*	background: blue;*/
 	overflow-y: scroll;
-	padding: 2rem 2rem;
+	padding: 2rem 0rem;
+	position:relative;
 }
