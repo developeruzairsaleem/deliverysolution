@@ -1,23 +1,22 @@
 import "./Driver.css"
 import Drivers from "../../drivers.json"
+import {useState} from "react";
+import SearchDriver from "../SearchDriver/SearchDriver.jsx"
 
 export default function Driver(){
 	const drivers = Drivers.drivers;
-	//  {
-    //   "id": 1,
-    //   "name": "John Doe",
-    //   "license_number": "ABC123",
-    //   "vehicle_type": "Truck",
-    //   "vehicle_plate_number": "XYZ-456",
-    //   "phone": "+1234567890",
-    //   "email": "john@example.com",
-    //   "location": "City A"
-    // },
+	
+	const [name,setName] = useState("")
+	const handleNameChange=(e)=> setName(e.target.value)
+
 	return (
 		<div className="driver">
 			<h1 className="driver__heading">
 				Drivers Data
 			</h1>
+
+
+			<SearchDriver name={name} handleNameChange={handleNameChange} />
 			<table className="driver__table">
 				<thead>
 					<th>Name</th>
@@ -33,7 +32,10 @@ export default function Driver(){
 				<tbody>
 				{
 
-					drivers.map((driver)=>{
+					drivers.filter((driver)=>{
+						return driver.name.toLowerCase().includes(name.toLowerCase())
+					}).map((driver)=>{
+
 					 return(<tr key= {driver.id}>
 						
 					<td>{driver.name}</td>
