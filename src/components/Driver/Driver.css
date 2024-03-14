@@ -1,0 +1,28 @@
+
+
+.driver__table{
+	  border-collapse: collapse;
+  border: 1px solid grey;
+  margin-right: 10px; 
+  border-radius: 20%;
+}
+
+.driver__table td{
+
+	border: 1px solid lightgrey;
+	border-radius: 20px;
+	padding: 1rem;
+	color: grey;
+	font-weight:400;
+
+}
+.driver__table th{
+	padding: 1rem;
+	color: grey;
+	border: 1px solid lightgrey;
+}
+.driver__heading{
+
+	margin:3rem 0;
+	text-align:center;
+}

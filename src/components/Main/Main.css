@@ -1,0 +1,6 @@
+.main{
+	width: 80%;
+/*	background: blue;*/
+	overflow-y: scroll;
+	padding: 2rem 2rem;
+}

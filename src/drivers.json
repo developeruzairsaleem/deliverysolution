@@ -1,0 +1,104 @@
+{
+  "drivers": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "license_number": "ABC123",
+      "vehicle_type": "Truck",
+      "vehicle_plate_number": "XYZ-456",
+      "phone": "+1234567890",
+      "email": "john@example.com",
+      "location": "China Towm"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "license_number": "DEF456",
+      "vehicle_type": "Van",
+      "vehicle_plate_number": "PQR-789",
+      "phone": "+1987654321",
+      "email": "jane@example.com",
+      "location": "Los Angelese"
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "license_number": "GHI789",
+      "vehicle_type": "Scooter",
+      "vehicle_plate_number": "LMN-012",
+      "phone": "+1122334455",
+      "email": "michael@example.com",
+      "location": "Washington DC"
+    },
+    {
+      "id": 4,
+      "name": "Emily Wilson",
+      "license_number": "JKL012",
+      "vehicle_type": "Bicycle",
+      "vehicle_plate_number": "GH212",
+      "phone": "+1555666777",
+      "email": "emily@example.com",
+      "location": "New York"
+    },
+    {
+      "id": 5,
+      "name": "David Brown",
+      "license_number": "MNO345",
+      "vehicle_type": "Truck",
+      "vehicle_plate_number": "QRS-345",
+      "phone": "+1444333222",
+      "email": "david@example.com",
+      "location": "Florida"
+    },
+    {
+      "id": 6,
+      "name": "Sarah Lee",
+      "license_number": "PQR678",
+      "vehicle_type": "Van",
+      "vehicle_plate_number": "UVW-678",
+      "phone": "+1777888999",
+      "email": "sarah@example.com",
+      "location": "California"
+    },
+    {
+      "id": 7,
+      "name": "Robert Garcia",
+      "license_number": "STU901",
+      "vehicle_type": "Truck",
+      "vehicle_plate_number": "XYZ-123",
+      "phone": "+1666777888",
+      "email": "robert@example.com",
+      "location": "New Jersey"
+    },
+    {
+      "id": 8,
+      "name": "Olivia Martinez",
+      "license_number": "VWX234",
+      "vehicle_type": "Van",
+      "vehicle_plate_number": "ABC-234",
+      "phone": "+1999888777",
+      "email": "olivia@example.com",
+      "location": "New York"
+    },
+    {
+      "id": 9,
+      "name": "Daniel Taylor",
+      "license_number": "YZA567",
+      "vehicle_type": "Motorcycle",
+      "vehicle_plate_number": "BCD-567",
+      "phone": "+1888777666",
+      "email": "daniel@example.com",
+      "location": "San Fransisco"
+    },
+    {
+      "id": 10,
+      "name": "Sophia Anderson",
+      "license_number": "ZAB890",
+      "vehicle_type": "Truck",
+      "vehicle_plate_number": "EFG-890",
+      "phone": "+1222333444",
+      "email": "sophia@example.com",
+      "location": "San Jose"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+.sidebar{
+	width:20%;
+	border-right: 1px solid grey;
+}
+
+.main-heading{
+
+	font-size: 2rem;
+	padding: 2rem;
+}
+
+.sidebar__list{
+list-style: none;
+margin-top: 3rem;
+
+
+}
+
+.list__item{
+	display:block;
+	padding: 2rem;
+	border-bottom: 1px solid lightgrey;
+	text-decoration: none;
+	color :red;
+	background:white;
+
+}
+.active{
+	background:red;
+	color:white;
+	display:block;
+	padding: 2rem;
+	border-bottom: 1px solid lightgrey;
+	text-decoration: none;
+}
