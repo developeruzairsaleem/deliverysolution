@@ -5,7 +5,18 @@ import SearchDriver from "../SearchDriver/SearchDriver.jsx"
 import DriverForm from "../DriverForm/DriverForm.jsx"
 
 export default function Driver(){
-	const drivers = Drivers.drivers;
+	const [driver, setDriver]= useState({
+		name:"",
+		email:"",
+		phone:"",
+		location:"",
+		vehicle_type:"",
+		license_number:"",
+		vehicle_plate_number:""
+	})
+	const[formActive,setFormActive]= useState(false)
+	const [name,setName] = useState("")
+	const [drivers, setDrivers] = useState(Drivers.drivers);
 
 	// const driverData ={
 	// 	name,
@@ -16,9 +27,26 @@ export default function Driver(){
 	// 	licenseNumber,
 	// 	vehicleNumber
 	// }
+	const handleFormActive=(val)=> _=>{
+		setFormActive(val)
+		setDriver({
+		name:"",
+		email:"",
+		phone:"",
+		location:"",
+		vehicle_type:"",
+		license_number:"",
+		vehicle_plate_number:""
+	})
 
-	
-	const [name,setName] = useState("")
+	}
+	const handleDriverChange=(data)=>(e)=>setDriver({...driver,[data]:e.target.value});
+
+
+	const addDriver=()=>{
+		setDrivers([driver,...drivers]);
+		handleFormActive(false)()
+	}
 	const handleNameChange=(e)=> setName(e.target.value)
 
 	return (
@@ -27,7 +55,15 @@ export default function Driver(){
 			<h1 className="driver__heading">
 				Drivers Data
 			</h1>
-			<DriverForm/>
+			<button onClick={handleFormActive(true)} className="add-driver">
+				Add Driver
+			</button>
+			<DriverForm handleFormActive={handleFormActive} 
+				formActive={formActive}
+				addDriver={addDriver} 
+				handleDriverChange={handleDriverChange} 
+				driver={driver}
+			/>
 
 
 			<SearchDriver name={name} handleNameChange={handleNameChange} />
